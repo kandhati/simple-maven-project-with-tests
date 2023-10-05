@@ -10,7 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/kandhati/simple-maven-project-with-tests.git'
+                // git 'https://github.com/kandhati/simple-maven-project-with-tests.git'
+                sh "git clone https://github.com/kandhati/simple-maven-project-with-tests.git"
                 // git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                 // git 'https://github.com/dizipharm/client-project-ms.git'
 
